@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --card-bg-color: #005E23;
+    --title-font: 'Playfair Display', sans-serif;
+    --title-bold: 900;
+    --body-font: Lato, sans-serif;
+    --title-color: #FCF400;
+    --body-color: #ECE7E7;
+    --btn-font-color: #ED0030;
+}
+
+body {
+    background-image: url(Images/ArcadiaBluffs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    background-color: var(--card-bg-color);
+    padding: 4rem 6rem;
+    text-align: center;
+    box-shadow: 10px 40px 10px rgba(0, 0, 0, 0.2);
+}
+
+#main__title {
+    font-family: var(--title-font);
+    color: var(--title-color);
+    font-size: 2rem;
+    font-weight: var(--title-bold);
+    margin-bottom: 4rem;
+}
+
+#main__slogan {
+    font-family: var(--body-font);
+    color: var(--body-color);
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+#link__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main__link {
+    padding: 1rem 2rem;
+    background-color: var(--title-color);
+    color: var(--btn-font-color);
+    font-family: var(--body-font);
+    font-weight: var(--title-bold);
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none; 
+    border-radius: .5em;
+    transition: all 0.3s ease;
+  }
+  
+  .main__link:hover {
+    background-color: #F2D600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: 2px;
+  }
+
