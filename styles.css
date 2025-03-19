@@ -6,7 +6,7 @@
 
 /* CSS Variables */
 :root {
-    --card-bg-color: #005E23;
+    --card-bg-color: rgba(0, 94, 35, .7);
     --title-font: 'Playfair Display', sans-serif;
     --title-bold: 900;
     --body-font: Lato, sans-serif;
@@ -28,6 +28,7 @@ body {
 
 #main-container {
     background-color: var(--card-bg-color);
+    width: 60%;
     padding: 4rem 6rem;
     text-align: center;
     box-shadow: 10px 40px 10px rgba(0, 0, 0, 0.2);
@@ -73,3 +74,35 @@ body {
     bottom: 2px;
   }
 
+/* MEDIA QUERIES - Laptops */
+@media (max-width: 1024px) {
+    .main-container {
+        padding: 2rem 4rem;
+    }
+
+    .main__link {
+        margin: 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* MEDIA QUERIES - Tablets */
+@media (max-width: 768px) {
+    #link__container {
+        flex-direction: column;
+    }
+}
+
+/* MEDIA QUERIES - Large Smartphones */
+@media (max-width: 640px) {
+    #main-container {
+        width: 80%;
+    }
+}
+
+/* MEDIA QUERIES - Small Smartphones */
+@media (max-width: 480px) {
+    #main-container {
+        width: 90%;
+    }
+}
